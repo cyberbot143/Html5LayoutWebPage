@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Marlabs Basic Website</title>
+        <link rel="icon"  type ="image/png" href="marlabs_title_logo.png" />
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="CyberAtom" />
+        <meta name="keywords" content="HTML, Meta Tags, Metadata,CSS" />
+        <meta name="description" content="Learning about Basic Html and CSS webage layout." />
+        <meta name="revised" content="SK Tuts, 6/7/2017" />
+    </head>
+    <body>
+        <!--Wrapper starts here-->
+        <div class = "wrapperHTML5">
+            <!-- header starts here-->
+            <header>
+                <img id = "webPageLogo" src="marlabs_title_logo.png" alt="logo" />
+                <h1>Marlabs Corporation Inc.</h1>
+            </header>
+            <!-- header starts here-->
+            <nav>
+
+                <div class="navigationBar">
+                    <ul>
+                        <li><a href="#">About Marlabs</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+            </nav>
+
+            <section>
+                <div class="mainPost">
+                    <image class="secImage" src="marlabs_title_logo.png" alt="logo" />
+                    <h2> My First Post</h2>
+
+                    <h4> Sample Post is a low cost way to mail people a sample of your product to try.
+                        Sample Post is a low cost way to mail people a sample of your product to try.
+                        Sample Post is a low cost way to mail people a sample of your product to try.
+                    </h4>
+                    <span style="display: inline;">
+                        <input type="button" onclick="like()" value="like"/> <input type="button" value="comment"/> <input type="button" value="share"/>
+                    </span> <br/>
+                </div>
+
+                <div class="mainPost">
+                    <image class="secImage" src="marlabs_title_logo.png" alt="logo" />
+                    <h2> My First Post</h2>
+
+                    <h4> Sample Post is a low cost way to mail people a sample of your product to try.
+                        Sample Post is a low cost way to mail people a sample of your product to try.
+                        .</h4>
+                    <span style="display: inline;">
+                        <input type="button" onclick="like()" value="like"/> <input type="button" value="comment"/> <input type="button" value="share"/>
+                    </span><span <p id ="show" ></p></span>
+                    
+                </div>
+            </section>
+
+            <aside>
+                <h3>Test Post_1 </h3>
+                <h4> Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                    .</h4>
+                <h3>Test Post_2 </h3>
+                <h4> Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                    .</h4>
+                <h3>Test Post_3 </h3>
+                <h4> Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                    Sample Post is a low cost way to mail people a sample of your product to try.
+                </h4>
+
+            </aside>
+
+
+
+            <footer>
+
+                <p>&copy; Copyright 2017, Marlabs Corporation Inc.<br/>
+                    One Corporate Place South, Floor 3, Piscataway NJ 08854-6116</p>
+            </footer>
+
+            <script>
+                var likes = 0; //GLOBAL VARIABLE
+                function like() {
+                    console.log("ENtered like");
+                    //THIS FUNCTION WILL WORK WHEN THE USER CLICKS THE BUTTON
+                    document.getElementById("show").innerHTML = likes;
+                    likes = likes + 1;
+                }
+            </script>
+
+
+        </div>
+        <!-- Wrapper ends here-->
+
+
+    </body>
+</html>
